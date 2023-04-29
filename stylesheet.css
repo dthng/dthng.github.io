@@ -13,24 +13,29 @@
     /* font sizes */
     --navbar-size: 1em;
     --body-size: 1em;
+    --icon-size: 1.25em;
 }
 
 @font-face {
     font-family: 'Roboto Serif';
-    src: url('fonts/RobotoSerif-VariableFont_GRAD,opsz,wdth,wght.ttf');
+    src: url('fonts/RobotoSerif-VariableFont_GRAD,opsz,wdth,wght.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Roboto Serif';
-    src: url('fonts/RobotoSerif-Italic-VariableFont_GRAD,opsz,wdth,wght.ttf');
+    src: url('fonts/RobotoSerif-Italic-VariableFont_GRAD,opsz,wdth,wght.ttf') format('truetype');
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Space Grotesk';
-    src: url('fonts/SpaceGrotesk-VariableFont_wght.ttf');
+    src: url('fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+}
 
 body {
     font-family: 'Roboto Serif', serif;
@@ -122,11 +127,17 @@ main {
 
 a {
     color: var(----body-text);
+    text-decoration: none;
     transition: 0.3s;
 }
 
 a:hover {
     color: var(--body-hover);
+}
+
+.icon {
+    font-family: 'Icofont';
+    font-size: var(--icon-size);
 }
 
 footer {
