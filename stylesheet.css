@@ -6,23 +6,14 @@
     --bg-color: #000000;
     --navbar-color: #f1eee4;
     --body-text: #f1eee4;
+    --body-hover: #89C462;
     --navbar-text: #c22a00;
     --navbar-text-hover: #6d1800;
 
     /* font sizes */
-    --body-size: 1vw;
+    --navbar-size: 1em;
+    --body-size: 1em;
 }
-
-/* if you have the URL of a font, you can set it below */
-/* feel free to delete this if it's not your vibe */
-
-/* this seems like a lot for just one font and I would have to agree 
-but I wanted to include an example of how to include a custom font.
-If you download a font file you can upload it onto your Neocities
-and then link it! Many fonts have separate files for each style
-(bold, italic, etc. T_T) which is why there are so many!
-
-*/
 
 @font-face {
     font-family: 'Roboto Serif';
@@ -70,6 +61,9 @@ and change the media query according to the comment! */
     /* header color here! */
     height: 100px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #headericon {
@@ -103,6 +97,8 @@ and change the media query according to the comment! */
     text-decoration: none;
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 600;
+    font-size: var(--navbar-size);
+    transition: 0.3s;
 }
 
 /* navigation link when a link is hovered over */
@@ -124,6 +120,15 @@ main {
     font-size: var(--body-size);
 }
 
+a {
+    color: var(----body-text);
+    transition: 0.3s;
+}
+
+a:hover {
+    color: var(--body-hover);
+}
+
 footer {
     background-color: var(--navbar-color);
     /* background color for footer */
@@ -135,22 +140,6 @@ footer {
     font-family: 'Space Grotesk', sans-serif;
     color: var(--navbar-text);
 }
-
-h1,
-h2,
-h3 {
-    color: #ED64F5;
-}
-
-h1 {
-    font-size: 25px;
-}
-
-strong {
-    /* this styles bold text */
-    color: #ED64F5;
-}
-
 
 /* BELOW THIS POINT IS MEDIA QUERY */
 
