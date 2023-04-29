@@ -53,11 +53,7 @@ body {
 /* the "container" is what wraps your entire website */
 #container {
     max-width: 100%;
-    /* this is the width of your layout! */
-    /* if you change the above value, scroll to the bottom
-and change the media query according to the comment! */
     margin: 0 auto;
-    /* this centers the entire page */
 }
 
 #header {
@@ -97,7 +93,8 @@ and change the media query according to the comment! */
 }
 
 /* navigation links*/
-#navbar li a {
+#navbar li a,
+#navbar li a:visited {
     color: var(--navbar-text);
     text-decoration: none;
     font-family: 'Space Grotesk', sans-serif;
@@ -131,7 +128,8 @@ a {
     transition: 0.3s;
 }
 
-a:hover {
+a:hover,
+a:visited {
     color: var(--body-hover);
 }
 
