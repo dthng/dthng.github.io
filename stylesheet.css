@@ -62,6 +62,7 @@ h6 {
   --navbar-size: 1em;
   --body-size: 1em;
   --icon-size: 1.25em;
+  --h1-size: 2em;
 }
 
 @font-face {
@@ -157,6 +158,14 @@ body {
   transition: 0.3s;
 }
 
+#navbar span {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: var(--navbar-size);
+  align-items: center;
+  color: var(--bg-color);
+}
+
 #flex {
   display: flex;
 }
@@ -188,6 +197,12 @@ a:visited {
 .icon {
   font-family: "Icofont";
   font-size: var(--icon-size);
+}
+
+h1 {
+  color: var(----body-text);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: var(--h1-size);
 }
 
 footer {
