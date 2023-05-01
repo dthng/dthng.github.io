@@ -177,12 +177,12 @@ main {
 a {
   color: var(----body-text);
   text-decoration: none;
-  transition: 0.3s;
 }
 
 a:hover,
 a:visited {
   color: var(--body-hover);
+  transition: 0.3s;
 }
 
 .icon {
