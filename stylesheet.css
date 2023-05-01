@@ -148,13 +148,13 @@ body {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 600;
   font-size: var(--navbar-size);
-  transition: 0.3s;
   align-items: center;
 }
 
 /* navigation link when a link is hovered over */
 #navbar li a:hover {
   color: var(--navbar-text-hover);
+  transition: 0.3s;
 }
 
 #flex {
