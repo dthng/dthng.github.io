@@ -1,179 +1,221 @@
-:root {
-    --header-image: url('/frog.png');
-
-    /* colors */
-    --header-color: #000000;
-    --bg-color: #000000;
-    --navbar-color: #f1eee4;
-    --body-text: #f1eee4;
-    --body-hover: #89C462;
-    --navbar-text: #c22a00;
-    --navbar-text-hover: #6d1800;
-
-    /* font sizes */
-    --navbar-size: 1em;
-    --body-size: 1em;
-    --icon-size: 1.25em;
-}
-
-@font-face {
-    font-family: 'Roboto Serif';
-    src: url('fonts/RobotoSerif-VariableFont_GRAD,opsz,wdth,wght.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Roboto Serif';
-    src: url('fonts/RobotoSerif-Italic-VariableFont_GRAD,opsz,wdth,wght.ttf') format('truetype');
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Space Grotesk';
-    src: url('fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Space Grotesk';
-    src: url('fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
-}
-
-body {
-    font-family: 'Roboto Serif', serif;
-    margin: 0;
-    background-color: var(--bg-color);
-    background-size: 65px;
-    color: var(--body-text);
-    text-align: center;
+/* RESET CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 * {
-    box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* CODE START */
+:root {
+  --header-image: url("/frog.png");
+
+  /* colors */
+  --header-color: #000000;
+  --bg-color: #000000;
+  --navbar-color: #f1eee4;
+  --body-text: #f1eee4;
+  --body-hover: #89c462;
+  --navbar-text: #c22a00;
+  --navbar-text-hover: #6d1800;
+
+  /* font sizes */
+  --navbar-size: 1em;
+  --body-size: 1em;
+  --icon-size: 1.25em;
+}
+
+@font-face {
+  font-family: "Roboto Serif";
+  src: url("fonts/RobotoSerif-VariableFont_GRAD,opsz,wdth,wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Serif";
+  src: url("fonts/RobotoSerif-Italic-VariableFont_GRAD,opsz,wdth,wght.ttf")
+    format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  font-family: "Roboto Serif", serif;
+  margin: 0;
+  background-color: var(--bg-color);
+  background-size: 65px;
+  color: var(--body-text);
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* the "container" is what wraps your entire website */
 #container {
-    max-width: 100%;
-    margin: 0 auto;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 #header {
-    width: 100%;
-    background-color: var(--header-color);
-    /* header color here! */
-    height: 100px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  background-color: var(--header-color);
+  /* header color here! */
+  height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #headericon {
-    height: 90%;
-    margin: 5px auto;
+  height: 90%;
+  margin: 5px auto;
 }
 
 /* navigation section!! */
 #navbar {
-    height: 40px;
-    background-color: var(--navbar-color);
-    /* navbar color */
-    width: 100%;
+  height: auto;
+  background-color: var(--navbar-color);
+  /* navbar color */
+  width: 100%;
 }
 
 #navbar ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    justify-content: space-evenly;
-}
-
-#navbar li {
-    padding-top: 10px;
+  display: flex;
+  padding: 10px;
+  margin: 0;
+  height: 100%;
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* navigation links*/
 #navbar li a,
 #navbar li a:visited {
-    color: var(--navbar-text);
-    text-decoration: none;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 600;
-    font-size: var(--navbar-size);
-    transition: 0.3s;
+  color: var(--navbar-text);
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: var(--navbar-size);
+  transition: 0.3s;
+  align-items: center;
 }
 
 /* navigation link when a link is hovered over */
 #navbar li a:hover {
-    color: var(--navbar-text-hover);
+  color: var(--navbar-text-hover);
 }
 
 #flex {
-    display: flex;
+  display: flex;
 }
-
 
 /* this is the color of the main content area,
 between the sidebars! */
 main {
-    background-color: var(--bg-color);
-    flex: 1;
-    padding: 20px;
-    font-size: var(--body-size);
+  background-color: var(--bg-color);
+  flex: 1;
+  padding: 20px;
+  font-size: var(--body-size);
+}
+
+.mainbody {
+  margin: auto 15%;
 }
 
 a {
-    color: var(----body-text);
-    text-decoration: none;
-    transition: 0.3s;
+  color: var(----body-text);
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 a:hover,
 a:visited {
-    color: var(--body-hover);
+  color: var(--body-hover);
 }
 
 .icon {
-    font-family: 'Icofont';
-    font-size: var(--icon-size);
+  font-family: "Icofont";
+  font-size: var(--icon-size);
 }
 
 footer {
-    background-color: var(--navbar-color);
-    /* background color for footer */
-    width: 100%;
-    height: 40px;
-    padding: 10px;
+  background-color: var(--navbar-color);
+  width: 100%;
+  height: auto;
+  padding: 5px;
 
-    text-align: center;
-    font-family: 'Space Grotesk', sans-serif;
-    color: var(--navbar-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--navbar-text);
 }
 
 /* BELOW THIS POINT IS MEDIA QUERY */
 
-/* so you wanna change the width of your page? 
-by default, the container width is 900px.
-in order to keep things responsive, take your new height,
-and then subtrack it by 100. use this new number as the 
-"max-width" value below
-*/
-
 @media only screen and (max-width: 800px) {
-    #flex {
-        flex-wrap: wrap;
-    }
+  #flex {
+    flex-wrap: wrap;
+  }
 
-    aside {
-        width: 100%;
-    }
+  .mainbody {
+    margin: auto 5%;
+  }
 
-    /* the order of the items is adjusted here for responsiveness!
-since the sidebars would be too small on a mobile device.
-feel free to play around with the order!
-*/
-
-    #navbar ul {
-        flex-wrap: wrap;
-    }
+  #navbar ul {
+    flex-wrap: wrap;
+  }
 }
