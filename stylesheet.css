@@ -317,7 +317,8 @@ footer {
     flex: 100%;
     max-width: 100%;
   }
+
   .gallery-zoom img {
-    width: 100%;
+    margin-top: 4.5em;
   }
 }
