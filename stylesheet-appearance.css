@@ -85,25 +85,27 @@ body {
   color: var(--bg-color);
 }
 
+a {
+  font-family: "Space Grotesk", sans-serif;
+  text-decoration: none;
+  font-size: var(--icon-size);
+  color: var(--body-text);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--body-hover);
+  transition: 0.3s;
+}
+
 main {
   background-color: var(--bg-color);
   font-size: var(--body-size);
 }
 
 .icon {
-  text-decoration: none;
-  color: var(--body-text);
   font-family: "Icofont";
-  font-size: var(--icon-size);
 }
-
-.icon:hover,
-.icon:visited {
-  text-decoration: none;
-  color: var(--body-hover);
-  transition: 0.3s;
-}
-
 h1 {
   color: var(--body-text);
   font-family: "Space Grotesk", sans-serif;
