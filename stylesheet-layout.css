@@ -155,6 +155,11 @@ main {
   display: block;
   max-height: 100%;
 }
+.gallery-close {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
 
 .img-main {
   width: 50%;
@@ -172,7 +177,7 @@ footer {
 }
 
 /* BELOW THIS POINT IS MEDIA QUERY */
-
+/* TABLET + MOBILE */
 @media only screen and (max-width: 800px) {
   #flex {
     flex-wrap: wrap;
@@ -191,7 +196,7 @@ footer {
     max-width: 50%;
   }
 }
-
+/* MOBILE */
 @media screen and (max-width: 600px) {
   .illu-gallery,
   .gdes-gallery {
@@ -201,5 +206,11 @@ footer {
 
   .gallery-zoom img {
     margin-top: 4.5em;
+  }
+
+  .gallery-close {
+    position: absolute;
+    top: 5px;
+    right: 25px;
   }
 }
