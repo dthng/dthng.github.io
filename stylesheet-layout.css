@@ -138,6 +138,9 @@ main {
   margin: 0.5em auto;
   vertical-align: middle;
   max-width: 100%;
+}
+
+.gdes-gallery img {
   max-height: 400px;
 }
 
