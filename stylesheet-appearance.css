@@ -8,8 +8,8 @@
   --navbar-color: #f1eee4;
   --body-text: #f1eee4;
   --body-hover: #89c462;
-  --navbar-text: #c22a00;
-  --navbar-text-hover: #6d1800;
+  --navbar-text: #e85822;
+  --navbar-text-hover: #b11b04;
 
   /* font sizes */
   --navbar-size: 1em;
@@ -55,6 +55,13 @@ body {
 #headericon {
   height: 90%;
   margin: 5px auto;
+}
+
+::-moz-selection,
+::selection {
+  /* change highlight colors */
+  color: var(--header-color);
+  background: var(--body-hover);
 }
 
 /* navigation section!! */
@@ -165,5 +172,5 @@ h2 {
 footer {
   background-color: var(--navbar-color);
   font-family: "Space Grotesk", sans-serif;
-  color: var(--navbar-text);
+  color: var(--bg-color);
 }
