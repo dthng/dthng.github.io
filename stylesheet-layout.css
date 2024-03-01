@@ -59,6 +59,7 @@ body {
 #container {
   max-width: 100%;
   margin: 0 auto;
+  vertical-align: middle;
 }
 
 #header {
@@ -175,6 +176,12 @@ main {
 .img-main {
   width: 30%;
   margin: 1em auto;
+}
+
+iframe {
+  max-width: 100%;
+  overflow: hidden;
+  border: none;
 }
 
 footer {
