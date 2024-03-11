@@ -179,7 +179,7 @@ main {
 }
 
 iframe {
-  max-width: 100%;
+  width: auto;
   overflow: hidden;
   border: none;
 }

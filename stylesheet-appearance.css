@@ -173,4 +173,5 @@ footer {
   background-color: var(--navbar-color);
   font-family: "Space Grotesk", sans-serif;
   color: var(--bg-color);
+  font-size: 0.75em;
 }
