@@ -175,3 +175,11 @@ footer {
   color: var(--bg-color);
   font-size: 0.75em;
 }
+
+/* MOBILE */
+@media screen and (max-width: 600px) {
+  #navbar li a,
+  #navbar li span {
+    font-size: 0.9em;
+  }
+}
