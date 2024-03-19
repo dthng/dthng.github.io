@@ -1,68 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>thao duyen nguyen</title>
-    <link rel="stylesheet" href="stylesheet-appearance.css" />
-    <link rel="stylesheet" href="stylesheet-layout.css" />
-    <link rel="stylesheet" href="fonts/icofont/icofont.min.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="scripts.js"></script>
-  </head>
 
-  <body>
-    <div id="container">
-      <div id="headerArea">
-        <div id="header"><img id="headericon" src="frog.png" /></div>
-        <nav id="navbar" style="margin-bottom: 0px">
-          <ul>
-            <li><a href="/index.html">home</a></li>
-            <li><span>illustration</span></li>
-            <li><a href="/gdesign.html">graphic design</a></li>
-            <li><a href="/uiuxdesign.html">ui/ux design</a></li>
-          </ul>
-        </nav>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>thao duyen nguyen</title>
+  <link rel="stylesheet" href="stylesheet-appearance.css" />
+  <link rel="stylesheet" href="stylesheet-layout.css" />
+  <link rel="stylesheet" href="fonts/icofont/icofont.min.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="scripts.js"></script>
+</head>
 
-      <div id="flex">
-        <main>
-          <h1>illustration</h1>
-          <br />
-          <div id="zoom" class="gallery-zoom">
-            <span class="gallery-close" onclick="zoomClose()">&times;</span>
-            <img id="zoom-img" />
-          </div>
-          <!--Image gallery-->
-          <div class="gallery-row">
-            <div class="gallery-column illu-gallery">
-              <img src="images/illust/01.jpg" onclick="zoom(this.src)" />
-              <img src="images/illust/05.jpg" onclick="zoom(this.src)" />
-              <img src="images/illust/09.jpg" onclick="zoom(this.src)" />
-            </div>
-            <div class="gallery-column illu-gallery">
-              <img src="images/illust/02.jpg" onclick="zoom(this.src)" />
-              <img src="images/illust/06.jpg" onclick="zoom(this.src)" />
-              <img src="images/illust/10.jpg" onclick="zoom(this.src)" />
-            </div>
-            <div class="gallery-column illu-gallery">
-              <img src="images/illust/03.jpg" onclick="zoom(this.src)" />
-              <img src="images/illust/07.jpg" onclick="zoom(this.src)" />
-              <img src="images/illust/12.jpg" onclick="zoom(this.src)" />
-            </div>
-            <div class="gallery-column illu-gallery">
-              <img src="images/illust/04.jpg" onclick="zoom(this.src)" />
-              <img src="images/illust/08.jpg" onclick="zoom(this.src)" />
-              <img src="images/illust/11.jpg" onclick="zoom(this.src)" />
-            </div>
-          </div>
-
-          <br />
-          <iframe id="ifr" src="footer.html"> </iframe>
-        </main>
-      </div>
+<body>
+  <div id="container">
+    <div id="headerArea">
+      <div id="header"><img alt="Logo" id="headericon" src="logo.png" /></div>
+      <nav id="navbar" style="margin-bottom: 0px">
+        <ul>
+          <li><a href="/index.html">home</a></li>
+          <li><span>illustration</span></li>
+          <li><a href="/gdesign.html">graphic design</a></li>
+          <li><a href="/uiuxdesign.html">ui/ux design</a></li>
+        </ul>
+      </nav>
     </div>
-  </body>
+
+    <div id="flex">
+      <main>
+        <h1>illustration</h1>
+        <br />
+        <div id="zoom" class="gallery-zoom">
+          <span class="gallery-close" onclick="zoomClose()">&times;</span>
+          <img id="zoom-img" />
+        </div>
+        <!--Image gallery-->
+        <div class="gallery-row">
+          <div class="gallery-column illu-gallery">
+            <img alt="Illustration of a bird" src="images/illust/01.jpg" onclick="zoom(this.src)" />
+            <img alt="Illustration of an insectoid monster" src="images/illust/05.jpg" onclick="zoom(this.src)" />
+            <img alt="Illustration of two male tieflings embracing on a chaise lounge" src="images/illust/09.jpg"
+              onclick="zoom(this.src)" />
+          </div>
+          <div class="gallery-column illu-gallery">
+            <img alt="Illustration of an Elezen black mage from Final Fantasy XIV" src="images/illust/02.jpg"
+              onclick="zoom(this.src)" />
+            <img alt="Illustration of a smiling Asian person" src="images/illust/06.jpg" onclick="zoom(this.src)" />
+            <img alt="Concept art illustration of a masked figure" src="images/illust/10.jpg"
+              onclick="zoom(this.src)" />
+          </div>
+          <div class="gallery-column illu-gallery">
+            <img alt="Illustration of a man in dark grey robes" src="images/illust/03.jpg" onclick="zoom(this.src)" />
+            <img alt="Illustration of Battler and Beatrice from Umineko" src="images/illust/07.jpg"
+              onclick="zoom(this.src)" />
+            <img alt="Illustration of a sword-wielding wolf, imitating a medieval tapestry" src="images/illust/12.jpg"
+              onclick="zoom(this.src)" />
+          </div>
+          <div class="gallery-column illu-gallery">
+            <img alt="Illustration of Sayo from Umineko" src="images/illust/04.jpg" onclick="zoom(this.src)" />
+            <img alt="Illustration of animals in a war room" src="images/illust/08.jpg" onclick="zoom(this.src)" />
+            <img alt="Illustration of Wiegraf from Final Fantasy Tactics" src="images/illust/11.jpg"
+              onclick="zoom(this.src)" />
+          </div>
+        </div>
+
+        <br />
+        <iframe id="ifr" src="footer.html"> </iframe>
+      </main>
+    </div>
+  </div>
+</body>
+
 </html>
