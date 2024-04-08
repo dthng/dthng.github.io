@@ -21,9 +21,9 @@
       <nav id="navbar" style="margin-bottom: 0px">
         <ul>
           <li><a href="../../index.html">home</a></li>
-          <li><a href="../../illustration.html">illustration</a></li>
           <li><a href="../../gdesign.html">graphic design</a></li>
           <li><a href="../../uiuxdesign.html">ui/ux design</a></li>
+          <li><a href="../../illustration.html">illustration</a></li>
         </ul>
       </nav>
     </div>
@@ -31,17 +31,29 @@
     <div id="flex">
       <main>
         <h1>art and music llc</h1>
+        <div id="zoom" class="gallery-zoom">
+          <span class="gallery-close" onclick="zoomClose()">&times;</span>
+          <img id="zoom-img" />
+        </div>
         <br />
         <p class="mainbody">
           Created for a UI development class, this is a redesign of an
           existing online storefront that gives it a new and bold colour
-          palette and responsive design elements. A Figma prototype and full
-          frontend implementation using HTML/CSS/Javascript was created as
-          part of this process.
+          palette and responsive design elements.
         </p>
-        <img alt="Screenshot of redesigned website" class="img-main" src="..\..\images\uiux\artandmusicllc.png" />
-        <img alt="Screenshot of redesigned website" class="img-main" src="..\..\images\uiux\artandmusicllc2.JPG" />
-        <img alt="Screenshot of redesigned website" class="img-main" src="..\..\images\uiux\artandmusicllc3.JPG" />
+
+        <p>Below is an image of the site's current landing page.</p>
+        <img alt="Screenshot of previous website" class="img-main" src="..\..\images\uiux\artandmusicllc4.jpg"
+          onclick="zoom(this.src)" />
+
+        <p> A Figma prototype and full frontend implementation using HTML/CSS/Javascript was created as part of this
+          process.</p>
+        <img alt="Screenshot of redesigned website on desktop and mobile" class="img-main"
+          src="..\..\images\uiux\artandmusicllc.png" onclick="zoom(this.src)" />
+        <img alt="Screenshot of redesigned website" class="img-main" src="..\..\images\uiux\artandmusicllc2.JPG"
+          onclick="zoom(this.src)" />
+        <img alt="Screenshot of redesigned website" class="img-main" src="..\..\images\uiux\artandmusicllc3.JPG"
+          onclick="zoom(this.src)" />
         <a href="../../uiuxdesign.html">go back</a>
         <br />
 
