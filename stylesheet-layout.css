@@ -110,7 +110,7 @@ main {
 
 .mainbody {
 	margin: auto;
-	max-width: 80%;
+	max-width: 85%;
 }
 
 /*RESPONSIVE IMAGE GALLERY*/
@@ -137,13 +137,14 @@ main {
 }
 
 .gallery-column img {
-	margin: 0.5em auto;
+	margin: 1em auto;
 	vertical-align: middle;
 	max-width: 100%;
 }
 
 .gdes-gallery img {
-	max-height: 500px;
+	max-height: 550px;
+	margin: 1em auto;
 }
 
 .gallery-zoom {
@@ -175,19 +176,19 @@ main {
 
 .img-main {
 	max-width: 650px;
-	margin: 1em auto;
+	margin: 1.5em auto;
 }
 
 iframe {
 	width: auto;
 	overflow: hidden;
 	border: none;
+	margin: 2em;
 }
 
 footer {
 	width: 100%;
 	height: auto;
-	padding: 5px;
 
 	display: flex;
 	align-items: center;
