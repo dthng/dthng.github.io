@@ -231,6 +231,8 @@ footer {
 
 	.gallery-zoom img {
 		margin-top: 4.5em;
+		height: auto;
+		width: 100%;
 	}
 
 	.gallery-close {
