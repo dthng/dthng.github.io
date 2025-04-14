@@ -2,53 +2,121 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>duyen thao nguyen</title>
-  <link rel="stylesheet" href="stylesheet-appearance.css" />
-  <link rel="stylesheet" href="stylesheet-layout.css" />
-  <link rel="stylesheet" href="fonts/icofont/icofont.min.css" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="scripts.js"></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Jennifer Nguyen</title>
+  <meta content="Jennifer Nguyen's portfolio website." name="description">
+  <meta content="portfolio, graphic design, web design" name="keywords">
+
+  <link href="assets/img/favicon.ico" rel="icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
-<body>
-  <div id="container">
-    <div id="headerArea">
-      <div id="header"><img alt="Logo" id="headericon" src="logo.png" /></div>
-      <nav id="navbar" style="margin-bottom: 0px">
-        <ul>
-          <li><span>home</span></li>
-          <li><a href="/gdesign.html">graphic design</a></li>
-          <li><a href="/uiuxdesign.html">ui/ux design</a></li>
-          <li><a href="/illustration.html">illustration</a></li>
+<body class="index-page">
+
+  <nav class="navbar navbar-expand-md fixed-top justify-content-between">
+    <img src="assets/img/logo.png" alt="Logo" class="navbar-brand nav-img">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a href="index.html">portfolio</a></li>
+      <li class="nav-item"><a href="about.html">about</a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+
+    <section class="portfolio">
+      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+        <ul class="portfolio-filters isotope-filters">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-uiux">UI/UX Design</li>
+          <li data-filter=".filter-gdes">Graphic Design</li>
+          <li data-filter=".filter-illu">Illustration</li>
         </ul>
-      </nav>
+
+        <div class="row gy-4 isotope-container">
+          <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-gdes">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/gestalt.jpg" class="img-fluid"
+                alt="'Gestalt, a modular typeface' written in a blocky typeface">
+              <div class="portfolio-info">
+                <a href="pages/gestalt.html" title="Gestalt" class="details-link">
+                  <p>Gestalt</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-uiux">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/unistyle.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <a href="pages/unistyle.html" title="UniStyle" class="details-link">
+                  <p>UniStyle</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-gdes">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/midsumma.jpg" class="img-fluid" alt="Midsumma logo on a pink background">
+              <div class="portfolio-info">
+                <a href="pages/midsumma.html" title="Midsumma Brand Refresh" class="details-link">
+                  <p>Midsumma Rebrand</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-illu">
+            <div class="portfolio-content h-100">
+              <img src="assets/img/portfolio/saps.jpg" class="img-fluid"
+                alt="A tote bag for the Soil and Plant Society with an illustration of a frog on a floating island garden">
+              <div class="portfolio-info">
+                <a href="pages/saps.html" title="Soil and Plant Society" class="details-link">
+                  <p>Soil and Plant Society</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center">
+        <span> all site content © jennifer nguyen 2023-2025. all rights
+          reserved.</span>
+      </div>
     </div>
 
-    <div id="flex">
-      <main>
-        <p class="mainbody">
-          Jennifer Nguyen (also known as Duyen Thao Nguyen) is a passionate frontend developer and graphic designer with
-          a proven track record in product design, user interface design, service design, and illustration. She has
-          contributed to small organisations and independently published projects, using her expertise to create
-          engaging content and develop innovative solutions.
-          She is interested in web accessibility and visual development. Her past endeavours include
-          private commission work, independent art anthologies, magazines
-          <i>Farrago</i> and <i>OmniSci</i>, and merchandise design for student organisations.
-        </p>
-        <br />
-        <a target="_blank" href="mailto:duyen.thaonguyen7@gmail.com" class="icon">&#xef12;</a>
-        <a target="_blank" href="https://www.linkedin.com/in/dthng/" class="icon">&#xed4d;</a>
-        <br />
+  </footer>
 
-        <br />
-        <iframe id="ifr" src="footer.html"> </iframe>
-      </main>
-    </div>
-  </div>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

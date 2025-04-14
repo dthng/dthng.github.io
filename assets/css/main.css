@@ -1,0 +1,274 @@
+/* Fonts */
+
+/* Panamera by NoirBlancRouge
+Bastien Sozeau <contact@noirblancrouge.com>
+*/
+@font-face {
+	font-family: "Panamera";
+	src: url("../fonts/Panamera.woff2") format("woff2"),
+		url("../fonts/Panamera.ttf") format("truetype");
+}
+
+:root {
+	--default-font: "Archivo Narrow", Arial, sans-serif;
+	--heading-font: "Panamera", Arial, sans-serif;
+	--nav-font: "Archivo Narrow", Arial, sans-serif;
+}
+
+/* Global colors */
+:root {
+	--background-color: #ffffff;
+	--default-color: #343434;
+	--heading-color: #050d18;
+	--accent-color: #d53e07;
+}
+
+/* Smooth scroll */
+:root {
+	scroll-behavior: smooth;
+}
+
+/* General */
+body {
+	color: var(--default-color);
+	background-color: var(--background-color);
+	font-family: var(--default-font);
+}
+
+a {
+	color: var(--accent-color);
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+a:hover {
+	color: color-mix(in srgb, var(--accent-color), transparent 25%);
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--heading-color);
+	font-family: var(--heading-font);
+}
+
+/* Navbar */
+
+.navbar {
+	padding: 0 25px;
+	border-bottom: #000000 1px solid;
+	background-color: var(--background-color);
+}
+
+.navbar a,
+.navbar a:focus {
+	color: var(--heading-color);
+	padding: 15px 30px;
+	padding-right: 0px;
+	padding-left: 35px;
+	font-family: var(--nav-font);
+	font-size: 22px;
+	font-weight: 350;
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	transition: 0.3s;
+	width: 100%;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus {
+	color: var(--accent-color);
+}
+
+.nav-img {
+	height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-nav {
+		flex-direction: row;
+	}
+
+	.navbar {
+		margin: auto;
+		margin-right: 0;
+	}
+
+	.nav-item a {
+		padding: 15px;
+		padding-left: 20px;
+		padding-right: 0px;
+	}
+}
+
+/* Footer */
+.footer {
+	color: var(--default-color);
+	background-color: var(--background-color);
+	font-size: 16px;
+	padding: 30px 0;
+	position: relative;
+	border-top: #000000 1px solid;
+}
+
+.footer .copyright p {
+	margin-bottom: 0;
+}
+
+/* Animation delay */
+@media screen and (max-width: 768px) {
+	[data-aos-delay] {
+		transition-delay: 0 !important;
+	}
+}
+
+/* Main */
+main {
+	color: var(--default-color);
+	background-color: var(--background-color);
+	padding: 30px;
+	overflow: clip;
+	padding-top: 93px;
+	margin: 0 50px;
+}
+
+@media (max-width: 768px) {
+	main {
+		margin: 0;
+	}
+}
+
+/* About */
+
+.about .content h1 b {
+	font-weight: 500;
+	color: var(--accent-color);
+}
+
+.about .content p {
+	font-weight: 400;
+	font-size: 22px;
+}
+
+/* Portfolio */
+
+.portfolio .portfolio-filters {
+	padding: 0;
+	margin: 0 auto 20px auto;
+	list-style: none;
+	text-align: center;
+}
+
+.portfolio .portfolio-filters li {
+	cursor: pointer;
+	display: inline-block;
+	padding: 0;
+	font-family: var(--heading-font);
+	font-size: 20px;
+	font-weight: 500;
+	margin: 0 20px;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-filters li:hover,
+.portfolio .portfolio-filters li.filter-active {
+	color: var(--accent-color);
+}
+
+.portfolio .portfolio-filters li:first-child {
+	margin-left: 0;
+}
+
+.portfolio .portfolio-filters li:last-child {
+	margin-right: 0;
+}
+
+@media (max-width: 575px) {
+	.portfolio .portfolio-filters li {
+		font-size: 14px;
+		margin: 0 5px;
+	}
+}
+
+.portfolio .portfolio-content .portfolio-info {
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.portfolio .portfolio-content img {
+	transition: 0.3s;
+}
+
+.portfolio .portfolio-content .portfolio-info .details-link {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 50%;
+	text-align: center;
+	display: inline-block;
+	font-size: 28px;
+	font-weight: 400;
+	color: var(--background-color);
+	transition: 0.3s;
+	line-height: 0;
+}
+
+.portfolio .portfolio-content .portfolio-info .details-link:hover {
+	color: var(--accent-color);
+}
+
+.portfolio .portfolio-content:hover .portfolio-info {
+	opacity: 1;
+}
+
+.portfolio .portfolio-content:hover img {
+	filter: brightness(15%);
+}
+
+/* Portfolio details */
+
+.portfolio-title {
+	font-weight: 500;
+}
+.portfolio-details-page p {
+	font-size: 22px;
+}
+
+#btn-back-home {
+	font-size: 24px;
+	transition: 0.3s;
+	border: none;
+}
+
+#btn-back-home:hover {
+	color: var(--accent-color);
+}
+
+#btn-back-to-top {
+	z-index: 9999;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+	background-color: var(--accent-color);
+	border-radius: 50%;
+	transition: 0.3s;
+}
+
+#btn-back-to-top i {
+	color: var(--background-color);
+	font-size: 28px;
+}
+
+#btn-back-to-top:hover {
+	background-color: var(--heading-color);
+}
