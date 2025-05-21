@@ -56,6 +56,11 @@ h6 {
 	font-family: var(--heading-font);
 }
 
+.list-unstyled {
+	list-style: disc;
+	padding-left: 1em;
+}
+
 /* Navbar */
 
 .navbar {
@@ -271,4 +276,8 @@ main {
 
 #btn-back-to-top:hover {
 	background-color: var(--heading-color);
+}
+
+.portfolio-details-page ul {
+	font-size: 22px;
 }
