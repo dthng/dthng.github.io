@@ -20,7 +20,7 @@ Bastien Sozeau <contact@noirblancrouge.com>
 	--background-color: #ffffff;
 	--default-color: #343434;
 	--heading-color: #050d18;
-	--accent-color: #d53e07;
+	--accent-color: #201ec6;
 }
 
 /* Smooth scroll */
@@ -59,6 +59,11 @@ h6 {
 .list-unstyled {
 	list-style: disc;
 	padding-left: 1em;
+}
+
+.vid {
+	aspect-ratio: 16 / 9;
+	width: 100% !important;
 }
 
 /* Navbar */
