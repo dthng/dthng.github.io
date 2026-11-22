@@ -5,14 +5,24 @@ Bastien Sozeau <contact@noirblancrouge.com>
 */
 @font-face {
 	font-family: "Panamera";
-	src: url("../fonts/Panamera.woff2") format("woff2"),
+	src:
+		url("../fonts/Panamera.woff2") format("woff2"),
 		url("../fonts/Panamera.ttf") format("truetype");
 }
 
+@font-face {
+	font-family: "Lato";
+	src:
+		url("../fonts/Lato-Regular.ttf") format("truetype"),
+		url("../fonts/Lato-Bold.ttf") format("truetype"),
+		url("../fonts/Lato-BoldItalic.ttf") format("truetype"),
+		url("../fonts/Lato-Italic.ttf") format("truetype");
+}
+
 :root {
-	--default-font: "Archivo Narrow", Arial, sans-serif;
+	--default-font: "Lato", Arial, sans-serif;
 	--heading-font: "Panamera", Arial, sans-serif;
-	--nav-font: "Archivo Narrow", Arial, sans-serif;
+	--nav-font: "Lato", Arial, sans-serif;
 }
 
 /* Global colors */
@@ -81,7 +91,7 @@ h6 {
 	padding-right: 0px;
 	padding-left: 35px;
 	font-family: var(--nav-font);
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 350;
 	display: flex;
 	align-items: center;
@@ -163,7 +173,7 @@ main {
 
 .about .content p {
 	font-weight: 400;
-	font-size: 22px;
+	font-size: 18px;
 }
 
 /* Portfolio */
@@ -225,15 +235,16 @@ main {
 	top: 50%;
 	text-align: center;
 	display: inline-block;
+	font-family: var(--heading-font);
 	font-size: 28px;
-	font-weight: 400;
+	font-weight: 500;
 	color: var(--background-color);
 	transition: 0.3s;
 	line-height: 0;
 }
 
 .portfolio .portfolio-content .portfolio-info .details-link:hover {
-	color: var(--accent-color);
+	color: #4e4bff;
 }
 
 .portfolio .portfolio-content:hover .portfolio-info {
@@ -241,20 +252,21 @@ main {
 }
 
 .portfolio .portfolio-content:hover img {
-	filter: brightness(15%);
+	filter: brightness(10%);
 }
 
 /* Portfolio details */
 
 .portfolio-title {
 	font-weight: 500;
+	color: var(--accent-color);
 }
 .portfolio-details-page p {
-	font-size: 22px;
+	font-size: 18px;
 }
 
 #btn-back-home {
-	font-size: 24px;
+	font-size: 22px;
 	transition: 0.3s;
 	border: none;
 }

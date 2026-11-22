@@ -23,7 +23,7 @@
 					layoutMode: layout,
 					filter: filter,
 					sortBy: sort,
-				}
+				},
 			);
 		});
 
@@ -44,7 +44,7 @@
 							aosInit();
 						}
 					},
-					false
+					false,
 				);
 			});
 	});
